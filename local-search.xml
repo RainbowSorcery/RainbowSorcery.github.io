@@ -8,9 +8,15 @@
     <link href="/2020/12/19/%E4%BB%8A%E6%97%A5%E6%A0%A1%E5%9B%AD%E7%99%BB%E5%BD%95%E6%8A%93%E5%8C%85%E8%AE%B0%E5%BD%95/"/>
     <url>/2020/12/19/%E4%BB%8A%E6%97%A5%E6%A0%A1%E5%9B%AD%E7%99%BB%E5%BD%95%E6%8A%93%E5%8C%85%E8%AE%B0%E5%BD%95/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="一、-用到的软件及开发环境"><a href="#一、-用到的软件及开发环境" class="headerlink" title="一、 用到的软件及开发环境"></a>一、 用到的软件及开发环境</h1><h2 id="1-1-用到的软件"><a href="#1-1-用到的软件" class="headerlink" title="1.1 用到的软件"></a>1.1 用到的软件</h2><ul><li>手机拥有root权限</li><li>安装xposed框架</li><li>安装JustTrustMe 模块</li><li>安装HttpCanary软件</li></ul><h2 id="1-2-各软件的作用"><a href="#1-2-各软件的作用" class="headerlink" title="1.2 各软件的作用"></a>1.2 各软件的作用</h2><ul><li>HttpCanary用于手机抓包</li><li>xposed框架用于 JustTrustMe 模块</li><li>JustTrustMe 用于解决 ssl-pinning 问题</li><li>root权限用于向根目录安装证书</li></ul><h1 id="二、抓包"><a href="#二、抓包" class="headerlink" title="二、抓包"></a>二、抓包</h1><h2 id="1-1-抓包遇到的问题"><a href="#1-1-抓包遇到的问题" class="headerlink" title="1.1 抓包遇到的问题"></a>1.1 抓包遇到的问题</h2><ul><li>使用模拟器进行抓包 今日校园自动退出(无解)</li><li>一旦打开代理 进行抓包 今日校园自动断网 (更换抓包软件解决)</li></ul>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>爬虫 抓包</tag>
+      
+    </tags>
     
   </entry>
   
