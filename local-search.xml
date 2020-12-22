@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>邻接链表的拓扑排序</title>
+    <link href="/2020/12/23/%E9%82%BB%E6%8E%A5%E9%93%BE%E8%A1%A8%E7%9A%84%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/"/>
+    <url>/2020/12/23/%E9%82%BB%E6%8E%A5%E9%93%BE%E8%A1%A8%E7%9A%84%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</url>
+    
+    <content type="html"><![CDATA[<p>拓扑排序是对有向无环图(Directed Acyclic Graph简称DAG)求出一个顶点序列，使其满足：对于任意边(u,v)ϵE，u在序列的位置总在v之前。</p><p>拓扑排序实现方法如下:<br>(1)从有向图中选择一个没有前驱(即入度为0)的顶点并且输出它.//入度：到这个点的边有多少条<br>(2)从图中删去该顶点,并且删去从该顶点发出的全部有向边，并且更新点的入度.<br>(3)重复上述两步,直到剩余的图中不再存在没有前趋的顶点为止.</p><ul><li>参考: <a href="https://www.cnblogs.com/jhl0824/p/11618429.html">https://www.cnblogs.com/jhl0824/p/11618429.html</a></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>今日校园登录抓包记录</title>
     <link href="/2020/12/19/%E4%BB%8A%E6%97%A5%E6%A0%A1%E5%9B%AD%E7%99%BB%E5%BD%95%E6%8A%93%E5%8C%85%E8%AE%B0%E5%BD%95/"/>
     <url>/2020/12/19/%E4%BB%8A%E6%97%A5%E6%A0%A1%E5%9B%AD%E7%99%BB%E5%BD%95%E6%8A%93%E5%8C%85%E8%AE%B0%E5%BD%95/</url>

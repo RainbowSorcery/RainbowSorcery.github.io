@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>今日校园登录抓包记录 - RainbowMagic</title>
+  <title>邻接链表的拓扑排序 - RainbowMagic</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="今日校园登录抓包记录">
+            <span class="h2" id="subtitle" title="邻接链表的拓扑排序">
               
             </span>
 
@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-12-19 19:19" pubdate>
-        2020年12月19日 晚上
+      <time datetime="2020-12-23 07:17" pubdate>
+        2020年12月23日 早上
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      242 字
+      166 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      1
        分钟
     </span>
   
@@ -224,35 +224,15 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">今日校园登录抓包记录</h1>
+            <h1 style="display: none">邻接链表的拓扑排序</h1>
             
             <div class="markdown-body">
-              <h1 id="一、-用到的软件及开发环境"><a href="#一、-用到的软件及开发环境" class="headerlink" title="一、 用到的软件及开发环境"></a>一、 用到的软件及开发环境</h1><h2 id="1-1-用到的软件"><a href="#1-1-用到的软件" class="headerlink" title="1.1 用到的软件"></a>1.1 用到的软件</h2><ul>
-<li>手机拥有root权限</li>
-<li>安装xposed框架</li>
-<li>安装JustTrustMe 模块</li>
-<li>安装HttpCanary软件</li>
-<li>幸运破解器 </li>
+              <p>拓扑排序是对有向无环图(Directed Acyclic Graph简称DAG)求出一个顶点序列，使其满足：对于任意边(u,v)ϵE，u在序列的位置总在v之前。</p>
+<p>拓扑排序实现方法如下:<br>(1)从有向图中选择一个没有前驱(即入度为0)的顶点并且输出它.//入度：到这个点的边有多少条<br>(2)从图中删去该顶点,并且删去从该顶点发出的全部有向边，并且更新点的入度.<br>(3)重复上述两步,直到剩余的图中不再存在没有前趋的顶点为止.</p>
+<ul>
+<li>参考: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/jhl0824/p/11618429.html">https://www.cnblogs.com/jhl0824/p/11618429.html</a></li>
 </ul>
-<h2 id="1-2-各软件的作用"><a href="#1-2-各软件的作用" class="headerlink" title="1.2 各软件的作用"></a>1.2 各软件的作用</h2><ul>
-<li>HttpCanary用于手机抓包</li>
-<li>xposed框架用于 JustTrustMe 模块</li>
-<li>JustTrustMe 用于解决 ssl-pinning 问题</li>
-<li>root权限用于向根目录安装证书和安装xposed模块</li>
-<li>有时JustTrustMe打开发现无法使用 幸运破解器可以破解软件授权信息 跳过授权验证</li>
-</ul>
-<h2 id="1-3-软件下载地址及安装教程"><a href="#1-3-软件下载地址及安装教程" class="headerlink" title="1.3 软件下载地址及安装教程"></a>1.3 软件下载地址及安装教程</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://lanzous.com/b0c2a09rg">JustTrustMe</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Qe411s7q9?spm_id_from=333.788.b_636f6d6d656e74.38">抓包使用教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/20693686?shareKey=YTAzZjY0MzI4NTg2NWZkZTI3NjY~&shareUid=596625&shareFrom=com.coolapk.market_10.5.3">root权限获取以及xposed框架安装</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Fuzion24/JustTrustMe">JustTrustMe</a></li>
-</ul>
-<h1 id="二、抓包"><a href="#二、抓包" class="headerlink" title="二、抓包"></a>二、抓包</h1><h2 id="1-1-抓包遇到的问题"><a href="#1-1-抓包遇到的问题" class="headerlink" title="1.1 抓包遇到的问题"></a>1.1 抓包遇到的问题</h2><ul>
-<li>使用模拟器进行抓包 今日校园自动退出(无解)</li>
-<li>一旦打开代理 进行抓包 今日校园自动断网 (更换HttpCanary解决)</li>
-<li>登录时遇到需要传递lt参数(往上翻查找获取lt的接口)</li>
-</ul>
-<h2 id="1-2-抓包过程"><a href="#1-2-抓包过程" class="headerlink" title="1.2 抓包过程"></a>1.2 抓包过程</h2>
+
             </div>
             <hr>
             <div>
@@ -262,7 +242,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E7%88%AC%E8%99%AB-%E6%8A%93%E5%8C%85/">爬虫 抓包</a>
+                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
                     
                   </div>
                 
@@ -275,15 +255,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/12/23/%E9%82%BB%E6%8E%A5%E9%93%BE%E8%A1%A8%E7%9A%84%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">邻接链表的拓扑排序</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/12/19/%E4%BB%8A%E6%97%A5%E6%A0%A1%E5%9B%AD%E7%99%BB%E5%BD%95%E6%8A%93%E5%8C%85%E8%AE%B0%E5%BD%95/">
+                        <span class="hidden-mobile">今日校园登录抓包记录</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
